@@ -41,14 +41,14 @@ const RestaurantPage = async ({ params }: RestaurantePageProps) => {
 
       <div className="grid grid-cols-2 gap-4 pt-14">
         <ConsumptionMethodOption
-          imageUrl="https://img3.stockfresh.com/files/i/iaroslava/m/68/8635115_stock-vector-vector-hamburger-icon-classic-burger-american-cheeseburger-with-lettuce-tomato-onion-cheese.jpg"
+          imageUrl="/dine-in.png"
           textAlt="Comer aqui"
           buttonText="Para comer aqui"
           option="DINE_IN"
           slug={slug}
         />
         <ConsumptionMethodOption
-          imageUrl="https://beagaembalagem.com.br/wp-content/uploads/2020/05/saco-lanche-bianca.webp"
+          imageUrl="/takeaway.png"
           textAlt="Para levar"
           buttonText="Para levar"
           option="TAKEAWAY"
