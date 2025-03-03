@@ -16,8 +16,13 @@ const CartSheet = () => {
     <Sheet open={isOpen} onOpenChange={toogleCart}>
       <SheetContent className="w-[85%] space-y-5">
         <SheetHeader>
-          <SheetTitle className="text-left">Minha sacola</SheetTitle>
+          <SheetTitle className="mb-6 text-left">Minha sacola</SheetTitle>
         </SheetHeader>
+        {products.length === 0 && (
+          <span className="text-sm italic text-muted-foreground">
+            Nenhum produto na sua sacola.
+          </span>
+        )}
         {products.map((product) => (
           <CartProductItem product={product} key={product.id} />
         ))}
